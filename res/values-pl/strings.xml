@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 ParanoidAndroid Project
+<!-- Copyright (C) 2012-2017 ParanoidAndroid Project
 
      Licensed under the GNU GPLv2 license
 
@@ -8,18 +8,5 @@
 -->
 
 <resources>
-
-    <string name="app_name">ParanoidWallpapers</string>
-    <string name="solid_color">Solid color</string>
-    <string name="pick_color">Wybierz kolor</string>
-    <string name="red">Czerwony</string>
-    <string name="green">Zielony</string>
-    <string name="blue">Niebieski</string>
-    <string name="purple">Fioletowy</string>
-    <string name="orange">Pomarańczowy</string>
-    <string name="white">Biały</string>
-    <string name="black">Czarny</string>
-    <string name="action_apply">Zastosuj</string>
     <string name="applying">Zmieniam na wybraną tapetę</string>
-
 </resources>

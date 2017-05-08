@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 ParanoidAndroid Project
+<!-- Copyright (C) 2012-2017 ParanoidAndroid Project
 
      Licensed under the GNU GPLv2 license
 
@@ -8,7 +8,5 @@
 -->
 
 <resources>
-
-    <style name="AppTheme" parent="android:Theme.Light" />
-
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar" />
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 ParanoidAndroid Project
+<!-- Copyright (C) 2012-2017 ParanoidAndroid Project
 
      Licensed under the GNU GPLv2 license
 
@@ -7,19 +7,18 @@
      or at https://www.gnu.org/licenses/gpl-2.0.txt
 -->
  
-<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.view.PagerTitleStrip android:id="@+id/pager_title_strip"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/page_indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:background="#33b5e5"
-        android:textColor="#fff"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp" />
+        app:tabBackground="@drawable/page_indicator_selector"
+        app:tabGravity="center" />
 
 </android.support.v4.view.ViewPager>

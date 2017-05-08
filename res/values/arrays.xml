@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 ParanoidAndroid Project
+<!-- Copyright (C) 2012-2017 ParanoidAndroid Project
 
      Licensed under the GNU GPLv2 license
 
@@ -8,22 +8,12 @@
 -->
 
 <resources>
-
-    <string-array name="solid_colors">
-        <item>@string/red</item>
-        <item>@string/green</item>
-        <item>@string/blue</item>
-        <item>@string/purple</item>
-        <item>@string/orange</item>
-        <item>@string/white</item>
-        <item>@string/black</item>
+    <string-array name="wallpapers" translatable="false">
+        <item>wallpaper_0</item>
+        <item>wallpaper_1</item>
+        <item>wallpaper_2</item>
+        <item>wallpaper_3</item>
+        <item>wallpaper_4</item>
+        <item>wallpaper_5</item>
     </string-array>
-
-    <string-array name="customize_colors">
-        <item>@string/red</item>
-        <item>@string/green</item>
-        <item>@string/blue</item>
-        <item>@string/white</item>
-    </string-array>
-
 </resources>
