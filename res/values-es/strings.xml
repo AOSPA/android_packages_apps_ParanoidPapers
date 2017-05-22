@@ -9,4 +9,5 @@
 
 <resources>
     <string name="applying">Aplicando fondo seleccionado</string>
+    <string name="longpress_info">Pulsación larga para aplicar el fondo de pantalla</string>
 </resources>
