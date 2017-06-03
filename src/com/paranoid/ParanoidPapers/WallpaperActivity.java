@@ -9,9 +9,11 @@
 
 package com.paranoid.ParanoidPapers;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.app.WallpaperManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -31,7 +33,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
+import android.widget.TextView;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -82,6 +87,11 @@ public class WallpaperActivity extends FragmentActivity {
      */
     private Snackbar mSnackbar;
 
+    /**
+     * The {@link ArrayList} that holds the current wallpaper modes icon.
+     */
+    private static ArrayList<Integer> sIcons = new ArrayList<Integer>();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,6 +116,11 @@ public class WallpaperActivity extends FragmentActivity {
         });
         mTabLayout = (TabLayout) findViewById(R.id.page_indicator);
         mTabLayout.setupWithViewPager(mViewPager, true);
+
+        sIcons.clear();
+        sIcons.add(R.drawable.ic_home);
+        sIcons.add(R.drawable.ic_lockscreen);
+        sIcons.add(R.drawable.ic_both);
 
         sWallpaperManager = WallpaperManager.getInstance(this);
 
@@ -157,6 +172,32 @@ public class WallpaperActivity extends FragmentActivity {
             final Context context = getContext();
             final WallpaperLoader loader = new WallpaperLoader(context);
 
+            ListAdapter adapter = new ArrayAdapter<Integer>(context,
+                    android.R.layout.select_dialog_item,
+                    android.R.id.text1, sIcons) {
+                @Override
+                public View getView(int position, View convertView, ViewGroup parent) {
+                    String[] items = context.getResources().getStringArray(
+                            R.array.wallpaper_options);
+                    float padding = context.getResources().getDimensionPixelSize(
+                            R.dimen.wallpaper_text_padding);
+                    float leftPadding = context.getResources().getDimensionPixelSize(
+                            R.dimen.wallpaper_text_padding_left);
+                    float textSize = context.getResources().getDimensionPixelSize(
+                            R.dimen.wallpaper_text_size);
+
+                    View view = super.getView(position, convertView, parent);
+                    TextView text = (TextView) view.findViewById(android.R.id.text1);
+                    text.setText(items[position]);
+                    text.setTextSize(textSize);
+                    text.setCompoundDrawablesWithIntrinsicBounds(sIcons.get(position), 0, 0, 0);
+                    text.setPadding((int) leftPadding, 0, 0, 0);
+                    text.setCompoundDrawablePadding((int) padding);
+
+                    return view;
+                }
+            };
+
             ImageView imageView = new ImageView(context);
             imageView.setLayoutParams(new ViewGroup.LayoutParams
                     (ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -167,8 +208,26 @@ public class WallpaperActivity extends FragmentActivity {
                 public boolean onLongClick(View v) {
                     Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
                             sWallpapers.get(sCurrentPosition));
-                    loader.setBitmap(bitmap);
-                    loader.execute();
+                    new AlertDialog.Builder(context)
+                            .setTitle(R.string.wallpaper_instructions)
+                            .setAdapter(adapter, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int selectedItemIndex) {
+                            int whichWallpaper;
+                            if (selectedItemIndex == 0) {
+                                whichWallpaper = WallpaperManager.FLAG_SYSTEM;
+                            } else if (selectedItemIndex == 1) {
+                                whichWallpaper = WallpaperManager.FLAG_LOCK;
+                            } else {
+                                whichWallpaper = WallpaperManager.FLAG_SYSTEM
+                                        | WallpaperManager.FLAG_LOCK;
+                            }
+                            loader.setBitmap(bitmap);
+                            loader.setType(whichWallpaper);
+                            loader.execute();
+                        }
+                    })
+                    .show();
                     return true;
                 }
             });
@@ -188,6 +247,8 @@ public class WallpaperActivity extends FragmentActivity {
     }
 
     private static class WallpaperLoader extends AsyncTask<Integer, Void, Boolean> {
+        int mWallpaperType;
+
         Bitmap mBitmap;
         Context mContext;
         ProgressDialog mDialog;
@@ -201,10 +262,14 @@ public class WallpaperActivity extends FragmentActivity {
             mBitmap = bitmap;
         }
 
+        private void setType(int type) {
+            mWallpaperType = type;
+        }
+
         @Override
         protected Boolean doInBackground(Integer... params) {
             try {
-                sWallpaperManager.setBitmap(mBitmap);
+                sWallpaperManager.setBitmap(mBitmap, null, true, mWallpaperType);
 
                 // Help GC
                 mBitmap.recycle();

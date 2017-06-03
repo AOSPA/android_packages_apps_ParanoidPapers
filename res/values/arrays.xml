@@ -16,4 +16,10 @@
         <item>wallpaper_4</item>
         <item>wallpaper_5</item>
     </string-array>
+
+    <string-array name="wallpaper_options">
+        <item>@string/wallpaper_option_home_screen</item>
+        <item>@string/wallpaper_option_lock_screen</item>
+        <item>@string/wallpaper_option_home_screen_and_lock_screen</item>
+    </string-array>
 </resources>
