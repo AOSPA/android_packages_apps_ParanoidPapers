@@ -11,4 +11,8 @@
     <string name="app_name">Paranoid Papers</string>
     <string name="applying">Applying selected wallpaper</string>
     <string name="longpress_info">Long press to apply wallpaper</string>
+    <string name="wallpaper_instructions">Set wallpaper</string>
+    <string name="wallpaper_option_home_screen">Home screen</string>
+    <string name="wallpaper_option_lock_screen">Lock screen</string>
+    <string name="wallpaper_option_home_screen_and_lock_screen">Both</string>
 </resources>
