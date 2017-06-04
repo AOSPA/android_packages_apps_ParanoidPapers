@@ -9,13 +9,13 @@
 
 package com.paranoid.ParanoidPapers;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -78,11 +78,6 @@ public class WallpaperActivity extends FragmentActivity {
     private static ArrayList<Integer> sWallpapers = new ArrayList<Integer>();
 
     /**
-     * The {@link Activity} that will be used to finish the activity.
-     */
-    private static FragmentActivity sActivity;
-
-    /**
      * The {@link Snackbar} that is responsible for showing the info text.
      */
     private Snackbar mSnackbar;
@@ -98,8 +93,6 @@ public class WallpaperActivity extends FragmentActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-
-        sActivity = this;
 
         // Create the adapter that will return a fragment for each of the three primary sections
         // of the app.
@@ -170,7 +163,7 @@ public class WallpaperActivity extends FragmentActivity {
                 Bundle savedInstanceState) {
             final Bundle args = getArguments();
             final Context context = getContext();
-            final WallpaperLoader loader = new WallpaperLoader(context);
+            final WallpaperLoader loader = new WallpaperLoader(getActivity());
 
             ListAdapter adapter = new ArrayAdapter<Integer>(context,
                     android.R.layout.select_dialog_item,
@@ -249,13 +242,13 @@ public class WallpaperActivity extends FragmentActivity {
     private static class WallpaperLoader extends AsyncTask<Integer, Void, Boolean> {
         int mWallpaperType;
 
+        Activity activity;
         Bitmap mBitmap;
-        Context mContext;
         ProgressDialog mDialog;
 
-        private WallpaperLoader(Context context) {
+        private WallpaperLoader(Activity activity) {
             super();
-            mContext = context;
+            this.activity = activity;
         }
 
         private void setBitmap(Bitmap bitmap) {
@@ -293,7 +286,7 @@ public class WallpaperActivity extends FragmentActivity {
 
         @Override
         protected void onPreExecute() {
-            mDialog = ProgressDialog.show(mContext, null, mContext.getString(R.string.applying));
+            mDialog = ProgressDialog.show(activity, null, activity.getString(R.string.applying));
         }
     }
 }
