@@ -9,10 +9,10 @@
 -->
 <resources>
   <string name="app_name">Paranoid Papers</string>
-  <string name="applying">Aplicando fondo seleccionado</string>
-  <string name="longpress_info">Pulsación larga para aplicar el fondo de pantalla</string>
-  <string name="wallpaper_instructions">Establecer fondo de pantalla</string>
-  <string name="wallpaper_option_home_screen">Pantalla de inicio</string>
-  <string name="wallpaper_option_lock_screen">Bloqueo de pantalla</string>
+  <string name="applying">A aplicar imagem de fundo selecionada</string>
+  <string name="longpress_info">Toque longo para aplicar imagem de fundo</string>
+  <string name="wallpaper_instructions">Definir imagem fundo</string>
+  <string name="wallpaper_option_home_screen">Página inicial</string>
+  <string name="wallpaper_option_lock_screen">Ecrã de Bloqueio</string>
   <string name="wallpaper_option_home_screen_and_lock_screen">Ambos</string>
 </resources>
