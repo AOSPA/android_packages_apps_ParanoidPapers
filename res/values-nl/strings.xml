@@ -8,7 +8,7 @@
      or at https://www.gnu.org/licenses/gpl-2.0.txt
 -->
 <resources>
-  <string name="app_name">Paranoïde Papers</string>
+  <string name="app_name">Paranoid Papers</string>
   <string name="applying">Geselecteerde achtergrond toepassen</string>
   <string name="longpress_info">Lang indrukken om achtergrond toe te passen</string>
   <string name="wallpaper_instructions">Instellen als achtergrond</string>
