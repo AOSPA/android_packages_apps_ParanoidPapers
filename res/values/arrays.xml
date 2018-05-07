@@ -9,12 +9,14 @@
 
 <resources>
     <string-array name="wallpapers" translatable="false">
-        <item>wallpaper_0</item>
-        <item>wallpaper_1</item>
-        <item>wallpaper_2</item>
-        <item>wallpaper_3</item>
-        <item>wallpaper_4</item>
+        <item>wallpaper_7</item>
+        <item>wallpaper_6</item>
         <item>wallpaper_5</item>
+        <item>wallpaper_4</item>
+        <item>wallpaper_3</item>
+        <item>wallpaper_2</item>
+        <item>wallpaper_1</item>
+        <item>wallpaper_0</item>
     </string-array>
 
     <string-array name="wallpaper_options">
