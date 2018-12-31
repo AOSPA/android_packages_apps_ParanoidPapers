@@ -22,7 +22,6 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/appcompat/res \
-    frameworks/support/design/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages android.support.v4 \
