@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabBackground="@drawable/page_indicator_selector"
-        app:tabGravity="center" />
+        app:tabGravity="center"
+        style="@style/CustomTabLayout"/>
 
 </android.support.v4.view.ViewPager>
