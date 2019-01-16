@@ -165,7 +165,7 @@ public class WallpaperActivity extends FragmentActivity {
             final Context context = getContext();
             final WallpaperLoader loader = new WallpaperLoader(getActivity());
 
-            ListAdapter adapter = new ArrayAdapter<Integer>(context,
+            final ListAdapter adapter = new ArrayAdapter<Integer>(context,
                     android.R.layout.select_dialog_item,
                     android.R.id.text1, sIcons) {
                 @Override
@@ -199,7 +199,7 @@ public class WallpaperActivity extends FragmentActivity {
             imageView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
-                    Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
+                    final Bitmap bitmap = BitmapFactory.decodeResource(getResources(),
                             sWallpapers.get(sCurrentPosition));
                     new AlertDialog.Builder(context)
                             .setTitle(R.string.wallpaper_instructions)
