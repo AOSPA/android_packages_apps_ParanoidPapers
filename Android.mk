@@ -30,4 +30,6 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay \
 
 LOCAL_PACKAGE_NAME := ParanoidPapers
 
+LOCAL_USE_AAPT2 := true
+
 include $(BUILD_PACKAGE)
