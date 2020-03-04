@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Paranoïde Papers</string>
-  <string name="applying">Geselecteerde achtergrond toepassen</string>
-  <string name="longpress_info">Lang indrukken om achtergrond toe te passen</string>
-  <string name="wallpaper_instructions">Instellen als achtergrond</string>
-  <string name="wallpaper_option_home_screen">Beginscherm</string>
-  <string name="wallpaper_option_lock_screen">Vergrendelscherm</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">Beide</string>
 </resources>

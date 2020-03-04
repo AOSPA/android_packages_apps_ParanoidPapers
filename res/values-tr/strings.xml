@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Paranoid Papers</string>
-  <string name="applying">Seçilen duvar kağıdı uygulanıyor</string>
-  <string name="longpress_info">Duvar kağıdını uygulamak için uzun basın</string>
-  <string name="wallpaper_instructions">Duvar kağıdını ayarla</string>
-  <string name="wallpaper_option_home_screen">Ana ekran</string>
-  <string name="wallpaper_option_lock_screen">Kilit ekranı</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">Her ikisi de</string>
 </resources>

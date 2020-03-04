@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Paranoid Papers</string>
-  <string name="applying">Tillämpar vald bakgrundsbild</string>
-  <string name="longpress_info">Långt tryck att tillämpa bakgrundsbilden</string>
-  <string name="wallpaper_instructions">Välj bakgrund</string>
-  <string name="wallpaper_option_home_screen">Hemskärm</string>
-  <string name="wallpaper_option_lock_screen">Låsskärm</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">Båda</string>
 </resources>

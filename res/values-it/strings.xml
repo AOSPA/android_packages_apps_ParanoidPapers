@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Paranoid Papers</string>
-  <string name="applying">Applicazione sfondo selezionato</string>
-  <string name="longpress_info">Pressione lunga per applicare lo sfondo</string>
-  <string name="wallpaper_instructions">Imposta sfondo</string>
-  <string name="wallpaper_option_home_screen">Schermata home</string>
-  <string name="wallpaper_option_lock_screen">Schermata di blocco</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">Entrambe</string>
 </resources>

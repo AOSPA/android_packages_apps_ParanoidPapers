@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Paranoid papiere</string>
-  <string name="applying">Aplikovanie vybranej tapety</string>
-  <string name="longpress_info">Dlho stlačte pre nastavenie tapety</string>
-  <string name="wallpaper_instructions">Nastaviť tapetu</string>
-  <string name="wallpaper_option_home_screen">Domovská obrazovka</string>
-  <string name="wallpaper_option_lock_screen">Obrazovka uzamknutia</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">Oboje</string>
 </resources>

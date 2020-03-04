@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2017 ParanoidAndroid Project
+<!-- Copyright (C) 2012-2020 ParanoidAndroid Project
 
      Licensed under the GNU GPLv2 license
 
@@ -8,8 +8,7 @@
 -->
 
 <resources>
-    <string-array name="wallpapers" translatable="false">
-        <item>wallpaper_14</item>
+    <array name="partner_wallpapers" translatable="false">
         <item>wallpaper_13</item>
         <item>wallpaper_12</item>
         <item>wallpaper_11</item>
@@ -24,11 +23,5 @@
         <item>wallpaper_2</item>
         <item>wallpaper_1</item>
         <item>wallpaper_0</item>
-    </string-array>
-
-    <string-array name="wallpaper_options">
-        <item>@string/wallpaper_option_home_screen</item>
-        <item>@string/wallpaper_option_lock_screen</item>
-        <item>@string/wallpaper_option_home_screen_and_lock_screen</item>
-    </string-array>
+    </array>
 </resources>
