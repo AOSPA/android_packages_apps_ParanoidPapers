@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Tapety Paranoid</string>
-  <string name="applying">Zastosuj wybraną tapete</string>
-  <string name="longpress_info">Przytrzymaj, aby zastosować tapetę</string>
-  <string name="wallpaper_instructions">Ustaw tapetę</string>
-  <string name="wallpaper_option_home_screen">Ekran główny</string>
-  <string name="wallpaper_option_lock_screen">Ekran blokady</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">Ekran główny i ekran blokady</string>
 </resources>

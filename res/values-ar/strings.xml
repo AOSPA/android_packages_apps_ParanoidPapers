@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">خلفيات Paranoid</string>
-  <string name="applying">جاري تعيين الخلفية المختارة</string>
-  <string name="longpress_info">اضغط لمدة طويلة لتطبيق الخلفية</string>
-  <string name="wallpaper_instructions">تعيين خلفية</string>
-  <string name="wallpaper_option_home_screen">الشاشة الرئيسية</string>
-  <string name="wallpaper_option_lock_screen">شاشة القفل</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">كلاهما</string>
 </resources>

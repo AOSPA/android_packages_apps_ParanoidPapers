@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Обои Paranoid</string>
-  <string name="applying">Применение выбранных обоев</string>
-  <string name="longpress_info">Удерживайте для применения обоев</string>
-  <string name="wallpaper_instructions">Установить обои</string>
-  <string name="wallpaper_option_home_screen">Домашний экран</string>
-  <string name="wallpaper_option_lock_screen">Экран блокировки</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">Оба</string>
 </resources>

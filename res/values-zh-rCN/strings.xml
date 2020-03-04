@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Paranoid 壁纸</string>
-  <string name="applying">正在应用选定的壁纸</string>
-  <string name="longpress_info">长按以应用壁纸</string>
-  <string name="wallpaper_instructions">设置壁纸</string>
-  <string name="wallpaper_option_home_screen">主屏幕</string>
-  <string name="wallpaper_option_lock_screen">锁屏</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">两者</string>
 </resources>

@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">Paranoid 桌布</string>
-  <string name="applying">正在套用所選的桌布</string>
-  <string name="longpress_info">長按即可套用桌布</string>
-  <string name="wallpaper_instructions">設定桌布</string>
-  <string name="wallpaper_option_home_screen">主螢幕</string>
-  <string name="wallpaper_option_lock_screen">鎖定畫面</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">以上兩者</string>
 </resources>

@@ -9,10 +9,4 @@
 -->
 <resources>
   <string name="app_name">पैरानॉयड पेपर्स</string>
-  <string name="applying">चयनित वॉलपेपर को लागू कर रहा है</string>
-  <string name="longpress_info">वॉलपेपर लागू करने के लिए लंबे समय तक दबाएं</string>
-  <string name="wallpaper_instructions">वॉलपेपर सेट करें</string>
-  <string name="wallpaper_option_home_screen">होम स्क्रीन</string>
-  <string name="wallpaper_option_lock_screen">लॉक स्क्रीन</string>
-  <string name="wallpaper_option_home_screen_and_lock_screen">दोनों</string>
 </resources>
