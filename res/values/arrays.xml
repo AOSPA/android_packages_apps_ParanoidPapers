@@ -9,6 +9,7 @@
 
 <resources>
     <array name="partner_wallpapers" translatable="false">
+        <item>wallpaper_14</item>
         <item>wallpaper_13</item>
         <item>wallpaper_12</item>
         <item>wallpaper_11</item>
