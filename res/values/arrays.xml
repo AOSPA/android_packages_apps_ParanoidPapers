@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2020 ParanoidAndroid Project
+<!-- Copyright (C) 2012-2020 Paranoid Android
 
      Licensed under the GNU GPLv2 license
 
@@ -9,6 +9,9 @@
 
 <resources>
     <array name="partner_wallpapers" translatable="false">
+        <item>wallpaper_17</item>
+        <item>wallpaper_16</item>
+        <item>wallpaper_15</item>
         <item>wallpaper_14</item>
         <item>wallpaper_13</item>
         <item>wallpaper_12</item>
