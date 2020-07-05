@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012-2020 ParanoidAndroid Project
+# Copyright (C) 2012-2020 Paranoid Android
 #
 # Licensed under the GNU GPLv2 license
 #
