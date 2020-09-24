@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "94b194a3_77ffc71a",
+        "filename": "Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-09-24T03:30:16Z",
+      "side": 1,
+      "message": "nooooo",
+      "revId": "c8d428b4ac40d909b6b5e3a9cbc0bcce22ba148b",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad",
+      "unresolved": true
+    }
+  ]
+}
