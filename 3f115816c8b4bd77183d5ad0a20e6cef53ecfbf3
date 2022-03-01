@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "986a4ba3_3faef546",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000468
+      },
+      "writtenOn": "2022-03-01T22:03:46Z",
+      "side": 1,
+      "message": "That\u0027s not SDK version",
+      "revId": "3f115816c8b4bd77183d5ad0a20e6cef53ecfbf3",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
