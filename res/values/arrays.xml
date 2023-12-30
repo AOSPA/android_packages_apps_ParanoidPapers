@@ -5,6 +5,7 @@
 -->
 <resources>
     <array name="partner_wallpapers" translatable="false">
+        <item>wallpaper_23</item>
         <item>wallpaper_22</item>
         <item>wallpaper_21</item>
         <item>wallpaper_20</item>
